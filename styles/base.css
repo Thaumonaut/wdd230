@@ -64,11 +64,11 @@ nav a {
     width: 100%;
 }
 
-/* nav a:hover::before {
+nav a:hover::before {
     content: '> ';
     color:var(--white);
     text-underline-position: under;
-} */
+}
 
 nav a:hover {
     transition: 200ms;
@@ -76,7 +76,6 @@ nav a:hover {
     color:var(--white);
     text-decoration: underline #cbfd7b 3px;
     text-underline-position: under;
-    /* background-color: var(--primary-color); */
 }
 
 h1 {
