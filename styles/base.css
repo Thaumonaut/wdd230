@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --primary-color: #19cf46;
+    --secondary-color: #cbfd7b;
+    --white: #f4fff4;
+    --black: #252525;
+}
+
+a {
+    color: var(--primary-color)
+}
+
+header {
+    padding: 3rem 1rem;
+    background: linear-gradient(125deg, var(--secondary-color), var(--primary-color)) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    margin-right: 2rem;
+    border: 4px solid var(--white);
+    width: 75px;
+    height: 75px;
+    border-radius: 15px;
+}
+
+header span {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: "Lemon";
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    grid-column: span 1fr;
+    background-color: var(--black);
+}
+
+nav a {
+    color:var(--secondary-color);
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color:var(--white);
+    background-color: var(--primary-color);
+}
+
+h1 {
+    font-size: 1rem;
+    color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.card {
+    margin: 1rem ;
+    background-color: white;
+    border: 1px solid var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card h2 {
+    padding: 1rem;
+    background: linear-gradient(125deg, var(--secondary-color), var(--primary-color)) ;
+    color: var(--black);
+    font-size: 1rem;
+}
+
+.card ul {
+    padding: 1rem;
+}
+
+.card ul li {
+    list-style-type: none;
+}
+
+.card p {
+    text-align: center;
+    padding: 5px;
+}
+
+footer {
+    background: var(--secondary-color);
+    color: var(--black);
+    padding: 1rem;
+    text-align: center;
+}
