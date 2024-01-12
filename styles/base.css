@@ -49,7 +49,6 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    grid-column: span 1fr;
     background-color: var(--black);
 }
 
