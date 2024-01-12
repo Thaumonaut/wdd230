@@ -126,3 +126,11 @@ footer {
     padding: 2rem;
     text-align: center;
 }
+
+footer p {
+    font-weight: 700;
+}
+
+#lastModified {
+    font-weight: 200;
+}
