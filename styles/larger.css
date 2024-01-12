@@ -1,27 +1,26 @@
-@media screen and (min-width: 435px) {
+@media screen and (min-width: 45rem) {
     header img {
         width: 150px;
         height: 150px;
-        margin: 2rem
+        margin: 4rem
     }
 
     header span {
-        font-size: 3rem;
+        font-size: 5rem;
+        font-weight: 800;
     }
 
     nav {
         flex-direction: row;
     }
 
-    nav a{
-        width: 100%;
-    }
-
     main {
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        margin: 1rem;
+        grid-template: min-content max-content / minmax(200px, 800px) minmax(100px, 400px);
+        padding: 0rem 1rem;
         gap: 1rem;
+        max-width: 60rem;
+        margin: 2rem auto;
     }
 
     h1 {
@@ -34,4 +33,5 @@
         margin: 0;
         box-shadow: 2px 2px 10px #19cf4763
     }
+
 }

@@ -4,14 +4,20 @@
     box-sizing: border-box;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    --primary-color: #19cf46;
+    --primary-color: #0E812D;
     --secondary-color: #cbfd7b;
     --white: #f4fff4;
-    --black: #252525;
+    --black: #233a13;
 }
 
 a {
     color: var(--primary-color)
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto auto 1fr auto;
 }
 
 header {
@@ -32,9 +38,10 @@ header img {
 
 header span {
     color: var(--white);
-    font-size: 1.5rem;
-    font-weight: 800;
-    font-family: "Lemon";
+    font-size: 10vw;
+    font-weight: 400;
+    letter-spacing: -4px;
+    font-family: "Libre Baskerville";
     text-align: center;
 }
 
@@ -48,18 +55,29 @@ nav {
 
 nav a {
     color:var(--secondary-color);
+    text-transform: uppercase;
     display: block;
     margin: 0 auto;
     text-align: center;
     padding: 0.5rem;
-    text-transform: uppercase;
     text-decoration: none;
     border-radius: 5px;
+    width: 100%;
 }
 
-nav a:hover {
+/* nav a:hover::before {
+    content: '> ';
     color:var(--white);
-    background-color: var(--primary-color);
+    text-underline-position: under;
+} */
+
+nav a:hover {
+    transition: 200ms;
+    font-weight: 200;
+    color:var(--white);
+    text-decoration: underline #cbfd7b 3px;
+    text-underline-position: under;
+    /* background-color: var(--primary-color); */
 }
 
 h1 {
@@ -68,12 +86,16 @@ h1 {
     padding: 1rem;
     text-align: center;
     font-weight: 800;
+    font-family: 'Libre Baskerville', 'Times New Roman', Times, serif;
+    border-bottom: 1px solid var(--primary-color);
+    margin: 0rem 1rem 2rem;
+    
 }
 
 .card {
-    margin: 1rem ;
+    margin: 0 1rem 1rem;
     background-color: white;
-    border: 1px solid var(--white);
+    border: 1px solid #bcdbbc;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -99,8 +121,8 @@ h1 {
 }
 
 footer {
-    background: var(--secondary-color);
-    color: var(--black);
-    padding: 1rem;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 2rem;
     text-align: center;
 }
