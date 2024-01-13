@@ -20,6 +20,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, h1 p {
     font-family: 'Spectral', 'Times New Roman', Times, serif;
+    color: var(--black);
 }
 
 header {
