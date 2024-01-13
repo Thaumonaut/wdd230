@@ -5,7 +5,7 @@
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     --primary-color: #2cd16b;
-    --darker-primary:rgb(255, 255, 255);
+    --secondary-color:#3340f3;
     --black: #1d292b;
     --white: #eafff2;
 }
@@ -16,6 +16,7 @@ body {
     grid-template-rows: auto auto 1fr auto;
     align-items: center;
     color: var(--black);
+    justify-items: center;
 }
 
 h1, h2, h3, h4, h5, h6, h1 p {
@@ -33,6 +34,7 @@ header {
     background-position: center;
     position: relative;
     background-color: #312e2e;
+    width: 100%;
 }
 
 header img {
@@ -87,9 +89,10 @@ nav a:hover {
 main {
     align-self: baseline;
     display: grid;
-    padding: 1rem;
-    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem 1rem;
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
+    max-width: 1520px;
 }
 
 main h2 {
@@ -112,14 +115,14 @@ footer {
     text-align: center;
     background-color: var(--black);
     color: white;
+    width: 100%;
 }
 
 .spotlight{
     border: none;
     grid-row: span 2;
-    grid-column: span 2;
+    /* grid-column: span 2; */
     background-color: var(--black);
-    color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,16 +139,9 @@ footer {
 }
 
 .spotlight * {
+    color: var(--white);
     margin: 1rem;
     z-index: 2;
-}
-
-.span-2 {
-    grid-column: span 2;
-}
-
-.full-width {
-    grid-column: span 2;
 }
 
 .align-center {
@@ -155,5 +151,4 @@ footer {
 .img-100 {
     justify-items: baseline;
     width: 100%;
-    grid-column: span 2;
 }
