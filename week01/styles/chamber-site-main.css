@@ -130,6 +130,8 @@ footer {
 .spotlight img {
     max-height: 300px;
     margin-top: 0;
+    width: 120%;
+    object-fit: cover;
 }
 
 .spotlight * {
