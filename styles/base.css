@@ -119,7 +119,7 @@ h1 {
 }
 
 footer {
-    background: var(--primary-color);
+    background: var(--black);
     color: var(--white);
     padding: 2rem;
     text-align: center;
