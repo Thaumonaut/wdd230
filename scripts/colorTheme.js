@@ -15,8 +15,8 @@ themeButton.addEventListener("click", () => {
 
 function setThemeText() {
     if(html.getAttribute('data-theme') == "dark") {
-        text.textContent = '☀️'
+        themeButton.innerHTML = '<p>◑</p>Dark';
     } else {
-        text.textContent = '🌒'
+        themeButton.innerHTML = '<p>◐</p>Light';
     }
 }

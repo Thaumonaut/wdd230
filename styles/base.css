@@ -29,6 +29,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 header img {
@@ -49,6 +50,7 @@ header span {
 }
 
 nav {
+    position: relative;
     padding: 1rem;
     background-color: var(--dark);
 }
@@ -94,6 +96,7 @@ nav a:hover {
 }
 
 #menu-button {
+    position: relative;
     font-size: 2rem;
     background-color: #0000;
     border: none;
@@ -164,17 +167,25 @@ footer p {
 #theme {
     position: relative;
     color: var(--light);
-    /* top: 1rem;
-    right: 1rem; */
+    top: 0px;
+    right: 0px;
     text-align: center;
     background: #fff0;
     border: none;
     filter: drop-shadow(2px 2px 5px #222c);
+    font-size: smaller;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#theme:hover {
+    filter: drop-shadow(2px 2px 8px #a8a8a850);
 }
 
 #theme p {
     font-size: 2rem;
-    padding: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
 [data-theme="dark"] * {
