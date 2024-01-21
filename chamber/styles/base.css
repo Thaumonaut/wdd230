@@ -148,7 +148,8 @@ nav button {
     border: none;
     color: var(--white);
     font-size: 3rem;
-    margin: 1rem;
+    margin: 1rem 2rem;
+    padding: .4rem 1rem;
 }
 
 nav li {
@@ -185,7 +186,7 @@ main {
 main h2 {
     text-align: center;
     font-size: 2.5rem;
-    line-height: 2rem;
+    line-height: 2.8rem;
     padding: 1rem;
 }
 
@@ -207,7 +208,6 @@ section {
 .spotlight{
     border: none;
     grid-row: span 2;
-    /* grid-column: span 2; */
     background-color: var(--black);
     display: flex;
     flex-direction: column;
@@ -295,7 +295,6 @@ section {
 
 article {
     background-color: white;
-    text-align: left;
     display: grid;
     justify-items: center;
     padding: 1rem;

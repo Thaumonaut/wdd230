@@ -69,6 +69,10 @@
     grid-template: 1fr 4fr/1fr 2fr;
   }
 
+  article img {
+    width: 150px;
+  }
+
   article h4 {
       font-size: 1.6rem;
   }
