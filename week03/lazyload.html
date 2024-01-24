@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Jacob Perry">
+    <meta name="description" content="Lazy load images on a webpage - WDD230 Jacob Perry">
+    <link rel="stylesheet" href="./styles/lazyload.css">
+    <title>WDD230 - Lazy Image Loading</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Image Loading</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="https://picsum.photos/400/600?random=1" alt="placeholder image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/400/600?random=2" alt="placeholder image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/400/600?random=3" alt="placeholder image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/400/600?random=4" alt="placeholder image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/400/600?random=5" alt="placeholder image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/400/600?random=6" alt="placeholder image" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> Jacob Perry &bull; Washington State &#127482;&#127480;</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="/scripts/getDates.js" defer></script>
+    <script src="./scripts/lazyload.js"></script>
+</body>
+
+</html>
