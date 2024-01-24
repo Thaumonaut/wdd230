@@ -69,6 +69,12 @@
       </ul>
     </nav>
     <main>
+      <picture class="hero">
+        <source media="(max-width: 400px)" srcset="./images/temple-small.webp">
+        <source media="(max-width: 960px)" srcset="./images/temple-large.webp">
+        <img src="./images/temple-large.webp" alt="Logan Utah temple landscape shot" width="960" height="540">
+        <span>Logan, UT Temple</span>
+      </picture>
       <h1>WDD 230: Web Frontend Development</h1>
       <section class="card">
         <h2>Learning Activities</h2>
@@ -98,11 +104,13 @@
       <section class="card">
         <h2>Information</h2>
         <div>
-          <p>Weather</p>
-          <p>Number of Visits</p>
-          <p>Current Time</p>
-          <p>etc.</p>
+          <p>Weather: 🌥️ 40º</p>
+          <p>Number of Visits: <span id="visits">0</span></p>
+          <p>Current Time: <span id="time">12:00 Somewhere</span></p>
         </div>
+      </section>
+      <section class="full-width">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d42770.468444023434!2d-122.21348084999998!3d47.9333994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1706131074207!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
     <footer>
@@ -115,5 +123,6 @@
     <script src="scripts/getDates.js" defer></script>
     <script src="scripts/colorTheme.js" defer></script>
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/information.js" defer></script>
   </body>
 </html>

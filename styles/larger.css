@@ -19,7 +19,6 @@
     }
 
     main {
-        display: grid;
         grid-template: min-content max-content / minmax(200px, 800px) minmax(100px, 400px);
         padding: 0rem 1rem;
         gap: 1rem;
@@ -42,4 +41,17 @@
         display: none;
     }
 
+    .full-width {
+        grid-column: span 2;
+        padding: 0;
+    }
+    
+    .hero {
+        grid-column: span 2;
+    }
+
+    .hero span {
+        font-size: larger;
+        padding: 2rem;
+    }
 }
