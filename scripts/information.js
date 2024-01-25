@@ -23,5 +23,6 @@ function setVisits() {
 
 const timeText = document.querySelector("#time");
 timeText.textContent = new Date().toLocaleTimeString('en-US', {
-    timeStyle: 'short'
+    timeStyle: 'short',
+    timeZone: 'America/Los_Angeles'
 });

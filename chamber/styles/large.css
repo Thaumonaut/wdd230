@@ -1,10 +1,9 @@
 @media screen and (min-width: 45rem) {
-
   header button {
     margin: 1rem 1rem;
   }
 
-  header div{
+  header div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -66,24 +65,46 @@
     text-align: left;
     display: grid;
     justify-items: start;
+  }
+
+  .news {
     grid-template: 1fr 4fr/1fr 2fr;
   }
-
-  article img {
-    width: 150px;
-  }
-
+  
   article h4 {
-      font-size: 1.6rem;
+    font-size: 1.6rem;
   }
-
-  article img {
-      grid-row: span 2;
-      padding: 0.5rem;
+  
+  .events article img {
+    width: 150px;
+    grid-row: span 2;
+    padding: 0.5rem;
   }
 
   article button {
     grid-column: 2/3;
-    
+  }
+
+  .sidebar {
+    grid-column: span 1;
+  }
+
+  .photo-grid {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photo-grid img:hover {
+    box-shadow: 0px 0px 8px var(--secondary-color);
+    transform: scale(1.05);
+  }
+
+  .photo-grid p {
+    font-family: var(--serif-font);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0.75rem;
+    color: var(--black);
   }
 }

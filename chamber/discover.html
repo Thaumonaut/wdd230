@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="author" content="Jacob Perry" />
+    <meta name="description" content="Chamber Site Plan" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Social Meta -->
+    <meta property="og:title" content="WDD230 Jacob Perry - Everett Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="thaumonaut.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://thaumonaut.github.io/wdd230/chamber/images/everett-background.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Everett Chamber of Commerce - Jacob Perry - WDD230</title>
+  </head>
+  <body>
+    <nav>
+      <button type="button" id="menu-button" class="">≡</button>
+      <ul id="menu" class="">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Discover</a>
+        </li>
+        <li>
+          <a href="#">Directory</a>
+        </li>
+        <li>
+          <a href="#">Join</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Everett <p>Chamber of Commerce</p></h1>
+      <p>Click to learn more about what we can do for you!</p>
+      <div>
+        <button class="secondary">Learn more</button>
+        <button>Join now</button>
+      </div>
+      <img src="./images/everett-background.jpg" alt="Wide shot of the city of Everett">
+    </header>
+    <main>
+      <section class="sidebar">
+        <h2>Information</h2>
+        <article>
+          <h3>Welcome</h3>
+          <p id="visit-tracker">Welcome! Let us know if you have any questions.</p>
+        </article>
+        <article>
+          <h3>Some information</h3>
+          <img src="https://placehold.co/300x200" height="200" width="300" alt="placeholder">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facilis aliquid consectetur. Neque, libero. Doloribus quas et explicabo nemo odit officia magnam? Officiis doloremque sunt reiciendis labore debitis nemo quidem.</p>
+        </article>
+        <article>
+          <h3>Calendar</h3>
+          <!-- jsCalendar v1.4.5 Javascript and CSS from jsdelivr npm cdn -->
+          <script src="https://cdn.jsdelivr.net/npm/simple-jscalendar@1.4.5/source/jsCalendar.min.js" integrity="sha384-F3Wc9EgweCL3C58eDn9902kdEH6bTDL9iW2JgwQxJYUIeudwhm4Wu9JhTkKJUtIJ" crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-jscalendar@1.4.5/source/jsCalendar.min.css" integrity="sha384-CTBW6RKuDwU/TWFl2qLavDqLuZtBzcGxBXY8WvQ0lShXglO/DsUvGkXza+6QTxs0" crossorigin="anonymous">
+          <!-- auto jsCalendar element -->
+          <div class="auto-jsCalendar"></div>
+
+        </article>
+        <article>
+          <h3>Some information</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facilis aliquid consectetur. Neque, libero. Doloribus quas et explicabo nemo odit officia magnam? Officiis doloremque sunt reiciendis labore debitis nemo quidem.</p>
+        </article>
+        
+      </section>
+      <section class="photo-grid">
+        <h2 class="span-2">Local Points of Interest</h2>
+        <div>
+          <img src="./images/processed/angel-winds-arena.webp" alt="Angel of the Winds arena entrance" loading="lazy" width="900" height="600">
+          <p>Angel of the Winds Arena entrance</p>
+        </div>
+        <div>
+          <img src="./images/processed/everett-mall.webp" alt="Everett Mall entrance" loading="lazy" width="900" height="600">
+          <p>Everett Mall entrance</p>
+        </div>
+        <div>
+          <img src="./images/processed/everett-public-library.webp" alt="Everett Public Library interior" loading="lazy" width="900" height="600">
+          <p>Everett Public Library interior</p>
+        </div>
+        <div>
+          <img src="./images/processed/funko-building.webp" alt="Funko Pop HQ building exterior" loading="lazy" width="900" height="600">
+          <p>Funk Pop HQ building exterior</p>
+        </div>
+        <div>
+          <img src="./images/processed/funko-field-aquasox.webp" alt="Aquasox baseball field" loading="lazy" width="900" height="600">
+          <p>Aquasox Baseball field</p>
+        </div>
+        <div>
+          <img src="./images/processed/jetty-island.webp" alt="Jetty Island beach" loading="lazy" width="900" height="600">
+          <p>Jetty Island beach</p>
+        </div>
+
+
+      </section>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <p>Everett</p>
+        <p>Chamber of Commerce</p>
+      </div>
+      <div>
+        <p>For more details, email <a href="#">notreal@domain.com</a></p>
+        <p>&copy;<span class="year"></span> Jacob Perry - WDD230 Web Frontend Development</p>
+        <p>Last Modified: <span class="last-modified"></span></p>
+      </div>
+    </footer>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/dates.js"></script>
+    <script src="./scripts/discover.js"></script>
+  </body>
+</html>
