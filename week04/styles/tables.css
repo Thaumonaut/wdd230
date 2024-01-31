@@ -1,0 +1,62 @@
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --border: #c5c5c5 solid thin;
+    --border-darker: #0f0f0f solid thin;
+
+    --header-background: #2d2c33;
+    --header-background-lighter: #4d4a5c;
+    --header-foreground: #d8ffdb;
+
+    --table-background: #e9f7ff;
+    --table-background-darker: #cbe2f0;
+}
+
+h1 {
+    text-align: center;
+    color: var(--header-background);
+}
+
+table {
+	margin: 2rem auto;
+	border: var(--border);
+	border-collapse: collapse;
+    background-color: var(--table-background);
+}
+
+caption {
+    padding: .5rem;
+    caption-side: bottom;
+    font-size: small;
+  }
+
+thead {
+    background: var(--header-background);
+    color: var(--header-foreground);
+    font-weight: bolder;
+}
+
+th, td {
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+thead th[scope="col"] {
+    background-color: var(--header-background-lighter);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--table-background-darker);
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+
+thead tr:last-child th:not(:last-child) {
+    border-right: var(--border-darker);
+}
+
+
+tbody tr th, tbody tr td:not(:last-child) {
+    border-right: var(--border);
+}
