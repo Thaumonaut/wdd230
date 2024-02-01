@@ -1,0 +1,66 @@
+:root {
+    --warning-color: #e0462a;
+    --success-color: #44b422;
+    --text-color: #222;
+
+    --validity-marker: 10px solid;
+}
+
+[data-theme="dark"] {
+    --text-color: #ddd;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    width: 100%;
+    max-width: 30rem;
+    justify-self: center;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: .2rem;
+}
+
+form input {
+    padding: .5rem;
+}
+
+#values {
+    display: flex;
+    width: 98.5%;
+    justify-content: space-between;
+    margin-left: .5rem;
+    margin-top: .5rem;
+}
+
+input:required {
+    border-left: var(--warning-color) var(--validity-marker);
+}
+
+.invalid:required {
+    border-left: var(--warning-color) var(--validity-marker) !important;
+}
+
+input:required:valid {
+    border-left: var(--success-color) var(--validity-marker);
+}
+
+.submitButton {
+    margin: 1rem 0;
+    padding: .8rem 1rem;
+    border: none;
+    width: 100%;
+    max-width: 30rem;
+    justify-self: center;
+    cursor: pointer;
+}
+
+
+.warning {
+    padding: 1rem 0;
+    color: var(--warning-color);
+}

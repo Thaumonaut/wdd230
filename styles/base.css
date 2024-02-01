@@ -5,6 +5,7 @@
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     --primary-color: #0E812D;
+    --primary-hover: #127728;
     --secondary-color: #cbfd7b;
     --light: #f4fff4;
     --dark: #115522;
@@ -66,6 +67,10 @@ nav ul {
 }
 
 .active {
+    background-color: var(--primary-color);
+}
+
+.show {
     display: flex;
 }
 
@@ -73,16 +78,18 @@ nav li {
     color:var(--light);
     text-transform: uppercase;
     display: block;
-    margin: 0 auto;
     text-align: center;
-    padding: 0.5rem;
     text-decoration: none;
-    border-radius: 5px;
     width: 100%;
 }
 
 nav li a {
     color: var(--light);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 0.8rem;
+    display: block;
 }
 
 nav a:hover::before {
@@ -93,10 +100,8 @@ nav a:hover::before {
 
 nav a:hover {
     transition: 200ms;
-    font-weight: 200;
     color:var(--light);
-    text-decoration: underline var(--secondary-color) 3px;
-    text-underline-position: under;
+    background-color: var(--primary-hover);
 }
 
 #menu-button {
