@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="author" content="Jacob Perry" />
+    <meta name="description" content="Chamber Site Plan" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Social Meta -->
+    <meta property="og:title" content="WDD230 Jacob Perry - Everett Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="thaumonaut.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://thaumonaut.github.io/wdd230/chamber/images/everett-background.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Everett Chamber of Commerce - Jacob Perry - WDD230</title>
+  </head>
+  <body>
+    <nav>
+      <button type="button" id="menu-button" class="">≡</button>
+      <ul id="menu" class="">
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./discover.html">Discover</a>
+        </li>
+        <li>
+          <a href="#">Directory</a>
+        </li>
+        <li>
+          <a href="#">Join</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Everett <p>Chamber of Commerce</p></h1>
+      <p>Click to learn more about what we can do for you!</p>
+      <div>
+        <button class="secondary">Learn more</button>
+        <button>Join now</button>
+      </div>
+      <img src="./images/everett-background.jpg" alt="Wide shot of the city of Everett">
+    </header>
+    <main>
+      <h2 class="full-width">Membership Opportunities</h2>
+        <section class="span-2 form">
+          <h3>Join Today!</h3>
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>User Information</legend>
+                    <label for="fname">First Name</label>
+                    <input class="top" type="text" name="fname" id="fname" required>
+
+                    <label for="lname">Last Name</label>
+                    <input class="top" type="text" name="lname" id="lname" required>
+
+                    <label for="position">Title/Position</label>
+                    <input class="top" type="text" name="position" id="position" pattern="/^[[:alpha:]]{7,}+$/" required>
+
+                    <label for="email">Email</label>
+                    <input class="top" type="email" name="email" id="email" placeholder="user@domain.com" required>
+
+                    <label for="telephone">Mobile Phone</label>
+                    <input class="top" type="tel" name="telephone" id="telephone" required>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Business Information</legend>
+
+                  <label for="bname">Business/Organization Name</label>
+                  <input class="top" type="text" name="bname" id="bname" required>
+
+                  <div >Membership Selection:</div>
+                  <label class="sbs"><input type="radio" name="membership" id="npmember" name="NP Membership" value="np"> NP Membership</label>
+                  <label class="sbs"><input type="radio" name="membership" id="bronze" name="Bronze" value="bronze"> Bronze Membership</label>
+                  <label class="sbs"><input type="radio" name="membership" id="silver" name="Silver" value="silver"> Silver Membership</label>
+                  <label class="sbs"><input type="radio" name="membership" id="gold" name="Gold" value="gold"> Gold Membership</label>
+
+                  <label for="details">Company Details</label>
+                  <textarea name="details" id="details" cols="30" rows="10" ></textarea>
+                </fieldset>
+                <input type="time" name="time" id="time" hidden>
+                <button type="submit">Join Chamber</button>
+            </form>
+        </section>
+        <section class="span-2 membership">
+          <h3 class="span-2">Membership Tiers</h3>
+          <article>
+            <h4>NP Membership Tier</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates modi iusto porro, deleniti eos itaque fugiat. Non, necessitatibus corporis. At ipsum vel laborum autem repudiandae voluptatibus iusto voluptatem rerum dolorem?</p>
+            <ul>
+              <li>Perk 1</li>
+              <li>Perk 2</li>
+              <li>Perk 3</li>
+              <li>Perk 4</li>
+            </ul>
+            <p class="cost"><span>Free</span> for non-profits</p>
+          </article>
+          <article>
+            <h4>Bronze Tier</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates modi iusto porro, deleniti eos itaque fugiat. Non, necessitatibus corporis. At ipsum vel laborum autem repudiandae voluptatibus iusto voluptatem rerum dolorem?</p>
+            <ul>
+              <li>Perk 1</li>
+              <li>Perk 2</li>
+              <li>Perk 3</li>
+              <li>Perk 4</li>
+            </ul>
+            <p class="cost"><span>25$</span> monthly</p>
+          </article>
+          <article>
+            <h4>Silver Tier</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates modi iusto porro, deleniti eos itaque fugiat. Non, necessitatibus corporis. At ipsum vel laborum autem repudiandae voluptatibus iusto voluptatem rerum dolorem?</p>
+            <ul>
+              <li>Perk 1</li>
+              <li>Perk 2</li>
+              <li>Perk 3</li>
+              <li>Perk 4</li>
+            </ul>
+            <p class="cost"><span>$50</span> monthly</p>
+          </article>
+          <article>
+            <h4>Gold Tier</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates modi iusto porro, deleniti eos itaque fugiat. Non, necessitatibus corporis. At ipsum vel laborum autem repudiandae voluptatibus iusto voluptatem rerum dolorem?</p>
+            <ul>
+              <li>Perk 1</li>
+              <li>Perk 2</li>
+              <li>Perk 3</li>
+              <li>Perk 4</li>
+            </ul>
+            <p class="cost"><span>$100</span> monthly</p>
+          </article>
+        </section>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <p>Everett</p>
+        <p>Chamber of Commerce</p>
+      </div>
+      <div>
+        <p>For more details, email <a href="#">notreal@domain.com</a></p>
+        <p>&copy;<span class="year"></span> Jacob Perry - WDD230 Web Frontend Development</p>
+        <p>Last Modified: <span class="last-modified"></span></p>
+      </div>
+    </footer>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/dates.js"></script>
+  </body>
+</html>

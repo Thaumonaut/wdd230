@@ -107,4 +107,12 @@
     margin-top: 0.75rem;
     color: var(--black);
   }
+
+  .membership {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form {
+    order: 0;
+  }
 }

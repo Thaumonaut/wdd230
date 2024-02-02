@@ -85,7 +85,7 @@ header button {
   margin: 1rem 1rem;
 }
 
-button:hover {
+button:hover, button:focus {
   border: 2px solid var(--secondary-color);
   background-color: var(--white);
   color: var(--secondary-color);
@@ -206,6 +206,7 @@ section {
   background-color: white;
   display: flex;
   flex-direction: column;
+  height: min-content;
 }
 
 .spotlight {
@@ -386,4 +387,83 @@ footer {
   height: auto;
   border-radius: 10px;
   transition: 200ms;
+}
+
+/* Form */
+
+fieldset {
+  text-align: left;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+fieldset legend {
+  font-size: larger;
+  padding: 0 .5rem;
+}
+
+fieldset label, fieldset div {
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 0.8rem;
+  margin-bottom: .2rem;
+  color: var(--secondary-color);
+}
+
+.top {
+  width: 100%;
+  padding: .6rem;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+.sbs {
+  font-weight: normal;
+  color: var(--black);
+}
+
+.membership article {
+  text-align: left;
+  justify-items: start;
+  margin: 1rem;
+  & p {
+    margin: .5rem 0;
+    text-indent: 1rem;
+  }
+  & ul {
+    margin-left: 1.25rem;
+    width: 100%;
+    & li {
+      width: 100%;
+      padding: .2rem 0;
+    }
+  }
+}
+
+.membership {
+  display: grid;
+}
+
+.form {
+  order: 2;
+}
+
+.cost {
+  padding-top: 2rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: smaller;
+}
+
+.cost span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--secondary-color);
 }
