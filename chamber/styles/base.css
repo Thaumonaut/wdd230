@@ -38,7 +38,7 @@ h3,
 h4,
 h5,
 h6,
-h1 p {
+.subtitle {
   font-family: "Spectral", "Times New Roman", Times, serif;
   color: var(--black);
 }
@@ -62,7 +62,7 @@ header {
   width: 100%;
 }
 
-header > p {
+header > p:not(.subtitle){
   color: var(--white);
   text-align: center;
   padding: 1rem;
@@ -119,7 +119,7 @@ header h1 {
   margin: 0;
 }
 
-header h1 p {
+header .subtitle {
   font-size: 1.5rem;
   color: var(--white);
   font-style: italic;
@@ -432,18 +432,19 @@ textarea {
   text-align: left;
   justify-items: start;
   margin: 1rem;
-  & p {
-    margin: .5rem 0;
-    text-indent: 1rem;
-  }
-  & ul {
-    margin-left: 1.25rem;
-    width: 100%;
-    & li {
-      width: 100%;
-      padding: .2rem 0;
-    }
-  }
+}
+
+.membership article p {
+  margin: .5rem 0;
+  text-indent: 1rem;
+}
+.membership article ul {
+  margin-left: 1.25rem;
+  width: 100%;
+}
+.membership article ul li {
+  width: 100%;
+  padding: .2rem 0;
 }
 
 .membership {
