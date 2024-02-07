@@ -1,0 +1,35 @@
+:root {
+    --main-color: rgb(59, 54, 51);
+    --text-color: rgb(243, 236, 230);
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+    margin: 1rem 2rem;
+}
+
+#cards section {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    margin: 1fr auto;
+    text-align: center;
+}
+
+#cards section img {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--main-color);
+}
+
+footer {
+    color: var(--text-color);
+    background-color: var(--main-color);
+    padding: 3rem;
+    text-align: center;
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Jones",
+    "movedIn": "2/4/24",
+    "visited": false,
+    "members": [
+        {
+            "name": "John",
+            "gender": "male",
+            "birthdate": "4/5/1967"
+        },
+        {
+            "name": "Spring",
+            "gender": "female",
+            "birthdate": "7/15/1971"
+        },
+        {
+            "name": "mark",
+            "gender": "male",
+            "birthdate": "9/30/1999"
+        }
+    ]
+}
