@@ -291,3 +291,18 @@ footer p {
 .full-width {
     padding: 1rem;
 }
+
+#weather {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+#weather img {
+    margin: -1rem;
+}
+
+#current-temp {
+    font-size: 2rem;
+    margin-top: .25rem;
+}
