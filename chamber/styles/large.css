@@ -115,4 +115,35 @@
   .form {
     order: 0;
   }
+
+  .grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))!important;
+    gap: 1rem;
+  }
+
+  .member-card img {
+    width: 300px;
+  }
+  .member-card {
+    min-width: 400px;
+  }
+
+  #change-view {
+    display: block;
+    border: none;
+    padding: 1rem;
+    height: auto;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+  }
+  
+  #change-view:hover{
+    background-color: var(--secondary-darker);
+  }
+  
+  #change-view:focus {
+    background-color: var(--black);
+  }
 }

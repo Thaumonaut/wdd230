@@ -178,6 +178,7 @@ nav li:hover {
 }
 
 main {
+  position: relative;
   align-self: baseline;
   display: grid;
   padding: 4rem 1rem;
@@ -185,6 +186,7 @@ main {
   grid-template-rows: minmax(50px, 100px) auto;
   gap: 1rem;
   max-width: 1520px;
+  width: 100%;
 }
 
 main h2 {
@@ -467,4 +469,34 @@ textarea {
   font-size: 2rem;
   font-weight: bold;
   color: var(--secondary-color);
+}
+
+/* Directory */
+
+#member-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-view {
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr))!important;
+  gap: 1rem;
+  text-align: start !important;
+}
+
+.member-card {
+  padding: 1rem;
+  width: 100%;
+}
+
+.member-card img {
+  width: 200px;
+}
+
+#change-view {
+  display: none;
 }

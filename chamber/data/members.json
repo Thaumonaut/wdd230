@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Funko",
+            "address": "2802 Wetmore Ave, Everett, WA 98201",
+            "phone": "4257833616",
+            "website": "https://funko.com/",
+            "branding": "/chamber/images/branding/funko.webp",
+            "membership": "Gold Member"
+        },
+        {
+            "name": "Boeing",
+            "address": "3003 Casino Rd, Everett, WA 98204",
+            "phone": "4253422121",
+            "website": "https://www.boeing.com/",
+            "branding": "/chamber/images/branding/boeing.webp",
+            "membership": "Gold Member"
+        },
+        {
+            "name": "Ivar's",
+            "address": "1520 41st St, Everett, WA 98201",
+            "phone": "4252529292",
+            "website": "http://www.ivars.com/",
+            "branding": "/chamber/images/branding/ivars.webp",
+            "membership": "Silver Member"
+        },
+        {
+            "name": "Everett Community College",
+            "address": "2000 Tower St, Everett, WA 98201",
+            "phone": "4253889100",
+            "website": "https://www.everettcc.edu/",
+            "branding": "/chamber/images/branding/evcc.webp",
+            "membership": "Silver Member"
+        },
+        {
+            "name": "Lombardi's",
+            "address": "1620 W Marine View Dr, Everett, WA 98201",
+            "phone": "4252521886",
+            "website": "http://www.lombardisitalian.com/",
+            "branding": "/chamber/images/branding/lombardis.webp",
+            "membership": "Bronze Member"
+        },
+        {
+            "name": "Scuttlebutt Brewing",
+            "address": "1205 Craftsman Way #101, Everett, WA 98201",
+            "phone": "4252579316",
+            "website": "http://www.scuttlebuttbrewing.com/",
+            "branding": "/chamber/images/branding/scuttlebutt.webp",
+            "membership": "Bronze Member"
+        },
+        {
+            "name": "Everett Public Library",
+            "address": "2702 Hoyt Ave, Everett, WA 98201",
+            "phone": "1235556789",
+            "website": "https://epls.org/",
+            "branding": "/chamber/images/branding/epl.webp",
+            "membership": 1
+        }
+    ]
+}
