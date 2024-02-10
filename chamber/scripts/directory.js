@@ -61,6 +61,8 @@ const viewToggle = document.querySelector('#change-view');
 viewToggle.addEventListener('click', () => {
     memberList.classList.toggle('grid-view')
 
+    viewToggle.blur();
+
     if(memberList.classList.contains('grid-view')) {
         viewToggle.querySelector('#change-view img').setAttribute('src', './images/list.svg')
     } else {
