@@ -8,6 +8,7 @@
   --primary-darker: #15812c;
   --secondary-color: #3340f3;
   --secondary-darker: #322794;
+  --alert-color: #f3ad51;
   --black: #1d292b;
   --black-transparent: #1d292bdd;
   --white: #eafff2;
@@ -240,6 +241,7 @@ section {
   color: var(--black);
   border: 2px solid #213dda52;
   position: relative;
+  height: 100%;
 }
 
 .information h3 {
@@ -269,13 +271,64 @@ section {
   display: none;
 }
 
-.weather-icon {
-  padding: 1rem;
+/* WEATHER */
+
+.weather {
+  background-color: var(--black);
+  color: white !important;
+  height: max-content;
+  min-height: 400px;
+}
+
+.weather h3 {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.current-weather .icon {
+  margin: -1rem;
   font-size: 5rem;
 }
 
-.temperature-text {
+.current-weather .tempurature {
   font-size: 3rem;
+  margin-bottom: .5rem;
+}
+
+.current-weather .condition {
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+.weather h4 {
+  color: var(--white);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.forecast-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sub-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-weather .tempurature {
+  font-size: 2rem;
+  padding-left: .5rem;
+}
+
+.sub-weather .icon {
+  width: 4rem;
+}
+
+.sub-weather .condition {
+  font-size: small;
 }
 
 .padding-top-4 {
@@ -285,10 +338,11 @@ section {
 .events {
   background: none;
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   border: none;
   box-shadow: none;
   padding: 0;
+  margin-bottom: 2rem;
 }
 
 .event-header {
@@ -318,25 +372,6 @@ article button {
   padding: 0.8rem 1rem;
   margin: 2rem 0.5rem;
   justify-self: end;
-  /* background: none; */
-  /* border: solid 2px var(--secondary-color); */
-  /* color: var(--secondary-color); */
-}
-
-/* article button:hover {
-    background-color: var(--secondary-color);
-    color: var(--white);
-} */
-
-.weather {
-  background-color: var(--black);
-  color: white !important;
-  height: max-content;
-}
-
-.weather h3 {
-  font-size: 3rem;
-  color: var(--white);
 }
 
 footer {
@@ -499,4 +534,65 @@ textarea {
 
 #change-view {
   display: none;
+}
+
+.banner {
+  padding: 2rem 3rem;
+  width: 100%;
+  background-color: var(--alert-color);
+  text-align: center;
+  min-height: fit-content;
+  position: relative;
+  font-weight: bold;
+  color: var(--black);
+  overflow: hidden;
+}
+
+.banner button {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  padding: 1rem;
+  background: var(--black);
+  border: none;
+  aspect-ratio: 1/1;
+  color: var(--white);
+}
+
+.banner button:hover {
+  background: var(--black-transparent);
+}
+
+.banner::after {
+  content: '⚠️';
+  position: absolute;
+  top: -5rem;
+  left: 1rem;
+  filter: brightness(1.2);
+  opacity: 0.3;
+  font-size: 10rem;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.sponsors {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.sponsors article {
+  display: flex;
+  flex-direction: column;
+}
+
+.sponsors article img {
+  margin: auto;
 }

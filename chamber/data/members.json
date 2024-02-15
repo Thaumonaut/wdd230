@@ -6,7 +6,7 @@
             "phone": "4257833616",
             "website": "https://funko.com/",
             "branding": "./images/branding/funko.webp",
-            "membership": "Gold Member"
+            "membership": 3
         },
         {
             "name": "Boeing",
@@ -14,7 +14,7 @@
             "phone": "4253422121",
             "website": "https://www.boeing.com/",
             "branding": "./images/branding/boeing.webp",
-            "membership": "Gold Member"
+            "membership": 3
         },
         {
             "name": "Ivar's",
@@ -22,7 +22,7 @@
             "phone": "4252529292",
             "website": "http://www.ivars.com/",
             "branding": "./images/branding/ivars.webp",
-            "membership": "Silver Member"
+            "membership": 2
         },
         {
             "name": "Everett Community College",
@@ -30,7 +30,7 @@
             "phone": "4253889100",
             "website": "https://www.everettcc.edu/",
             "branding": "./images/branding/evcc.webp",
-            "membership": "Silver Member"
+            "membership": 2
         },
         {
             "name": "Lombardi's",
@@ -38,7 +38,7 @@
             "phone": "4252521886",
             "website": "http://www.lombardisitalian.com/",
             "branding": "./images/branding/lombardis.webp",
-            "membership": "Bronze Member"
+            "membership": 1
         },
         {
             "name": "Scuttlebutt Brewing",
@@ -46,7 +46,7 @@
             "phone": "4252579316",
             "website": "http://www.scuttlebuttbrewing.com/",
             "branding": "./images/branding/scuttlebutt.webp",
-            "membership": "Bronze Member"
+            "membership": 1
         },
         {
             "name": "Everett Public Library",
@@ -54,7 +54,7 @@
             "phone": "1235556789",
             "website": "https://epls.org/",
             "branding": "./images/branding/epl.webp",
-            "membership": 1
+            "membership": 0
         }
     ]
 }
