@@ -537,6 +537,10 @@ textarea {
   width: 200px;
 }
 
+.member-card a {
+  color: var(--secondary-color);
+}
+
 #change-view {
   display: none;
 }
@@ -610,11 +614,11 @@ textarea {
 }
 
 .silver-member {
-  color: #929292;
+  color: #696969;
 }
 
 .gold-member {
-  color: #d8c34f;
+  color: #957323;
 }
 
 .bronze-member {
