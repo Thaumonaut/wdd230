@@ -31,6 +31,8 @@ const displayForecast = (data) => {
     }
   });
 
+  console.log(forecast)
+
   const sectionTitle = document.createElement('h4');
   sectionTitle.textContent = "3-Day Forecast";
   weatherSection.append(sectionTitle);

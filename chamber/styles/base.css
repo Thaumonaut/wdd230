@@ -44,6 +44,10 @@ h6,
   color: var(--black);
 }
 
+h3 {
+  font-size: 2rem;
+}
+
 a {
   color: var(--primary-color);
 }
@@ -338,6 +342,7 @@ section {
 .events {
   background: none;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   border: none;
   box-shadow: none;
@@ -581,7 +586,7 @@ textarea {
 
 .sponsors {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   background: none;
   border: none;
@@ -591,8 +596,27 @@ textarea {
 .sponsors article {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding-bottom: 4rem;
 }
 
 .sponsors article img {
   margin: auto;
+}
+
+.membership-tag {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.silver-member {
+  color: #929292;
+}
+
+.gold-member {
+  color: #d8c34f;
+}
+
+.bronze-member {
+  color: #91866a;
 }

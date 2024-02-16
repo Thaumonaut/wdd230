@@ -58,7 +58,7 @@
   }
 
   .events {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
 
   article {
@@ -76,7 +76,6 @@
   }
   
   .events article img {
-    width: 150px;
     grid-row: span 2;
     padding: 0.5rem;
   }

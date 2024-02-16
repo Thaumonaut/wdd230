@@ -47,39 +47,53 @@ function displayCards(data) {
         listItem.appendChild(name);
 
         
-        let address = document.createElement('p');
-        let phone = document.createElement('p');
-        let website = document.createElement('p');
+        // let address = document.createElement('p');
+        // let phone = document.createElement('p');
+        // let website = document.createElement('p');
         let membership = document.createElement('p');
         
-        address.innerHTML = `<span class="bold">Address: </span> ${member.address}`
-        listItem.appendChild(address);
+        // address.innerHTML = `<span class="bold">Address: </span> ${member.address}`
+        // listItem.appendChild(address);
         
-        phone.innerHTML = `<span class="bold">Phone: </span> ${member.phone}`
-        listItem.appendChild(phone);
+        // phone.innerHTML = `<span class="bold">Phone: </span> ${member.phone}`
+        // listItem.appendChild(phone);
         
-        website.innerHTML = `<span class="bold">Website: </span> <a href="${member.website}">${member.website}</a>`
-        listItem.appendChild(website);
+        // website.innerHTML = `<span class="bold">Website: </span> <a href="${member.website}">${member.website}</a>`
+        // listItem.appendChild(website);
         
-        membership.innerHTML = `<span class="bold">Membership: </span>${GetMembershipText(member.membership)}`
+        membership.innerHTML = `${GetMembershipText(member.membership)}`
+        membership.classList.add(GetMembershipText(member.membership, true))
+        membership.classList.add('membership-tag')
         listItem.appendChild(membership);
 
         memberList.appendChild(listItem);
     });
 }
 
-function GetMembershipText(level) {
+function GetMembershipText(level, isClassName = false) {
     switch (level) {
         case 0:
+            if (isClassName) {
+                return 'np-member'
+            }
             return "Nonprofit Member"
         case 1:
+            if (isClassName) {
+                return 'bronze-member'
+            }
             return "Bronze Member"
         case 2:
+            if (isClassName) {
+                return 'silver-member'
+            }
             return "Silver Member"
         case 3:
+            if (isClassName) {
+                return 'gold-member'
+            }
             return "Gold Member"
         default:
-            break;
+            return ''
     }
 }
 

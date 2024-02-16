@@ -6,7 +6,7 @@ if (!dateVisited) {
 } else if (Math.abs(Date.now() - dateVisited) / 36e5 < 24) {
     visitsText.textContent = "Welcome back, we are glad to see you again so soon!"
 } else {
-    visitsText.textContent = `you last visited ${Math.floor((Math.abs(Date.now() - dateVisited) / 36e5) / 24)} days since you last visited`
+    visitsText.textContent = `You last visited ${Math.floor((Math.abs(Date.now() - dateVisited) / 36e5) / 24)} days ago.`
 }
 
 setDate(Date.now())
