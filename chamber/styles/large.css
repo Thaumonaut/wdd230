@@ -145,4 +145,8 @@
   #change-view:focus {
     background-color: var(--black);
   }
+
+  .sponsors article {
+    grid-row: 2/3;
+  }
 }
