@@ -74,7 +74,11 @@ header > p:not(.subtitle){
   z-index: 2;
 }
 
-button {
+a {
+  text-decoration: none;
+}
+
+button, .primary-btn {
   padding: 1rem 2rem;
   z-index: 2;
   color: var(--white);
@@ -86,11 +90,11 @@ button {
   cursor: pointer;
 }
 
-header button {
+header button, .primary-btn {
   margin: 1rem 1rem;
 }
 
-button:hover, button:focus {
+button:hover, button:focus, .primary-btn:hover, .primary-btn:focus {
   border: 2px solid var(--secondary-color);
   background-color: var(--white);
   color: var(--secondary-color);
